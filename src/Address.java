@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by KangKang on 17-11-1-下午2:44
  */
@@ -10,7 +12,17 @@ public class Address {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
-    public void getAddress(){
-        System.out.println("name:" + name + " phoneNumber:" + phoneNumber + " emailAddress:" + emailAddress);
+    public void show(){
+        System.out.println("name=" + name + ",telephone=" + phoneNumber + ",eMail=" + emailAddress);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name  = scanner.next();
+        String phoneNumber = scanner.next();
+        String email = scanner.next();
+        Address address  =  new Address(name, email, phoneNumber);
+        address.show();
+
     }
 }
