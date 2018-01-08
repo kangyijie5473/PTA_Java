@@ -1,24 +1,26 @@
+import java.util.Scanner;
+
 /**
  * Created by KangKang on 17-11-10-下午2:58
  */
-//abstract class TT{
-//    abstract void dis();
-//}
-//public class Test extends TT{
-//    @Override
-//    void dis() {
-//        System.out.println("Test");
-//    }
-//
-//    public static void changeStr(String str){
-//        str = "wel";
-//    }
+abstract class TT{
+    abstract void dis();
+}
+public class Test extends TT{
+    @Override
+    void dis() {
+        System.out.println("Test");
+    }
 
-//    public static void main(String[] args) {
-//        String a = "123";
-//        changeStr(a);
-//        System.out.println(a);
-//    }
+    public static void changeStr(String str){
+        str = "wel";
+    }
+
+    public static void main(String[] args) {
+        String a = "123";
+        changeStr(a);
+        System.out.println(a);
+    }
 //    public static void main(String[] args) {
 //        int[] arr = new int[]{8, 2, 1, 0, 3};
 //        int[] index = new int[]{2, 0, 3, 2, 4, 0, 1, 3, 2, 3, 3};
@@ -28,32 +30,32 @@
 //        }
 //        System.out.println("telephone number=" + tel);
 //    }
-//    public static int test() {
-//    int t =0;
-//    try {
-//        t = 1;
-//        Integer.parseInt(null);
-//        return t;
-//    } catch (Exception e) {
-//        t = 2;
-//        return t;
-//    }
-//    finally {
-//        t = 3;
-//    }
-//}
-//    public static void main(String[] args) {
-////        System.out.println((new Test()).dis());
-//        (new Test()).dis();
-//        (new era()).dis();
-//    }
-//}
-//class era extends TT{
-//    @Override
-//    void dis() {
-//        System.out.println("era");
-//    }
-//}
+    public static int test() {
+    int t =0;
+    try {
+        t = 1;
+        Integer.parseInt(null);
+        return t;
+    } catch (Exception e) {
+        t = 2;
+        return t;
+    }
+    finally {
+        t = 3;
+    }
+}
+    public static void main(String[] args) {
+//        System.out.println((new Test()).dis());
+        (new Test()).dis();
+        (new era()).dis();
+    }
+}
+class era extends TT{
+    @Override
+    void dis() {
+        System.out.println("era");
+    }
+}
 
 
 //interface Arithmetic{
@@ -143,7 +145,7 @@
 //        System.out.println("thank you");
 //    }
 //}
-
+//
 //import javax.swing.JButton;
 //import javax.swing.JFrame;
 //import java.awt.event.*;
@@ -180,7 +182,7 @@
 //        frame.setVisible(true);
 //    }
 //}
-
+//
 //import java.util.Scanner;
 //public class GUIexam2 {
 //    void ioArray() {
@@ -211,29 +213,53 @@
 //        a.ioArray();
 //    }
 //}
-import java.util.Scanner;
-class GUIexam2 {
-    void handleException() throws Exception{
-        Scanner in = new Scanner(System.in);
-        int first = in.nextInt();
-        int second = in.nextInt();
-        int result;
-
-        try {
-            result = first / second;
-        }finally {
-            //throw Exception
-            System.out.println("Default handle");
-        }
-        System.out.println("END");
-    }
-
-    public static void main(String[] args) {
-        GUIexam2 g = new GUIexam2();
-        try {
-            g.handleException();
-        }catch (Exception e){
-            System.out.println("asd");
-        }
-    }
-}
+//import java.util.Scanner;
+//class GUIexam2 {
+//    void handleException() throws Exception{
+//        Scanner in = new Scanner(System.in);
+//        int first = in.nextInt();
+//        int second = in.nextInt();
+//        int result;
+//
+//        try {
+//            result = first / second;
+//        }finally {
+//            //throw Exception
+//            System.out.println("Default handle");
+//        }
+//        System.out.println("END");
+//    }
+//
+//    public static void main(String[] args) {
+//        GUIexam2 g = new GUIexam2();
+//        try {
+//            g.handleException();
+//        }catch (Exception e){
+//            System.out.println("asd");
+//        }
+//    }
+//}
+//public class GUIexam2 {
+//    public static final int test() {
+//        int t =0;
+//        try {
+//            t = 1;
+//            Integer.parseInt(null);
+//            return t;
+//        } catch (Exception e) {
+//            t = 2;
+//            return t;
+//        }
+//        finally {
+//            t = 3;
+//            return t;
+//        }
+//    }
+//    public static void main(String[] args) {
+//        //System.out.println(GUIexam2.test());
+//        Scanner scanner = new Scanner(System.in);
+//        String a = scanner.nextLine();
+//        System.out.println("accept:" + a);
+//        System.out.println("totally input " + a.length() + " characters.");
+//    }
+//}
